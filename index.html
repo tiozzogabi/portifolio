@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portifolio</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/medias.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo.svg" alt="" />
+      <img src="./images/burger.svg" id="bar" />
+      <ul class="nav-list">
+        <li><a href="#portifolio" class="link portifolio">Portifólio</a></li>
+        <li><a href="#sobre" class="link sobre">Sobre Mim</a></li>
+        <li><a href="#contato" class="link contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="titulo-um ">
+      <h1 class="left">
+        <span class="red">Oi,</span><br> Meu nome é
+        <span class="orange"> Gabrielle Tiozzo</span>
+      </h1>
+      <p class="right">este é meu <span class="blue">portifólio digital</span></p>
+      </div>
+      <div class="img-blob"><img class="blobUm" src="./images/blob.svg"></div>
+    </main>
+
+    <section class="port">
+      <h2 class="title" id="portifolio">Portifólio</h2>
+      <div id="content-box">
+        <div id="content-items"> 
+          <a href="#notion" onclick="Modal.open()" >
+          <div class="content orange" ><img class="img-box" src="https://img.icons8.com/ios/250/FFFFFF/light-on.png"></div>
+          </a>
+          <a href="#portf" onclick="ModalPorti.open()">
+          <div class="content blue" ><img class="img-box" src="https://img.icons8.com/ios/250/FFFFFF/business.png"></div>
+          </a>
+          <a href="#discover" onclick="ModalRock.open()">
+          <div class="content orange" ><img class="img-box" src="https://img.icons8.com/ios/250/FFFFFF/project.png"></div>
+          </a>
+        </div>
+        
+      </div>
+      </div>
+    </section>
+
+    <div class="modal-overlay">
+      <div class="modal-box">
+        <div class="box-title">
+        <button class="btn"><a href="" onclick="Modal.close()">X</a></button>
+        <p class="title">Notion widget</p>
+      </div>
+      <div class="box-content">
+      <span>- Widget Notion Date</span>
+      <span>- Contém data, mês, dia da semana e mês</span>
+      <span>- Versão em modo escuro e claro para o Notion</span>
+    </div>  
+      <img src="./images/imgEx.png" alt="Capa do projeto" class="cover">
+      <img src="./images/github-brands.svg" class="icon-modal" /></a> 
+    </div>
+    </div>
+  
+    <div class="modal-overlay modal-porti">
+      <div class="modal-box">
+        <div class="box-title">
+          <button class="btn"><a href="" onclick="ModalPorti.close()">X</a></button>
+        <h3 class="title">Portifólio</h3>
+        </div>
+        <div class="box-content">
+          <span>- Portifólio Academico</span>
+          <span>- Contém 3 projetos</span>
+          <span>- features futuras: tradução em inglês, melhor acessibilidade e modo claro</span>
+        </div> 
+      <img src="./images/github-brands.svg" class="icon-modal" /></a> 
+      </div>
+    </div>
+
+    <div class="modal-overlay modal-rocketseat">
+      <div class="modal-box">
+        <div class="box-title">
+        <button class="btn"><a href="" onclick="ModalRock.close()">X</a></button>
+        <p class="title">Projeto Rockseat</p>
+        </div>
+        <div class="box-content">
+          <span>- Projeto Dev.Finances</span>
+          <span>- Produzido na Maratona Discover</span>
+          <span>- Feature adicional- login e senha</span>
+        </div> 
+          <img src="./images/github-brands.svg" class="icon-modal" /></a> 
+      </div>
+    </div>
+    
+    <section class="about">
+      <h2 class="title" id="sobre">Sobre Mim</h2>
+      <div id="container">
+        <img src="./images/foto.png" id="fotinha" />
+        <p class="about-me">
+          &nbsp Olá, pode me chamar de Gabi. Estou atulamente estudando no curso de
+          Design Digital na Universidade Anhembi Morumbi e tenho estudado sobre
+          área de programação web. Passo a maior parte do meu tempo estudando
+          JavaScript e fazendo exercícios em sites como CodeWars, JSChallenger
+          e na hora do descanso vou assistir meus animes favoritos. 🔥
+        </p>
+      </div>
+    </section>
+    
+    <section class="contact">
+      <h2 class="title" id="contato">Contato</h2>
+      <div id="container-end">
+      <div id="contact-img">
+        <a href="https://github.com/tiozzogabi" target="_blank"><img src="./images/github-brands.svg" class="icons" /></a>
+        <a href="https://www.instagram.com/future_cold_dawn/?hl=pt-br" target="_blank"
+          ><img src="./images/instagram-brands.svg" class="icons"
+        /></a>
+        <a href="www.linkedin.com/in/gabrielle-tiozzo" target="_blank"><img src="./images/linkedin-brands.svg" class="icons" /></a>
+        <a href="mailto:tiozzogabi@gmail.com?"><img src="./images/at-solid.svg" class="icons" /></a>
+      </div>
+      <p class="info">
+        Esse são as principais redes em que você pode entrar em contato comigo e
+        ver mais do meu trabalho.
+      </p>
+    </div>
+    </section>
+
+    <script src="./script/nav.js"></script>
+    <script src="./script/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+@media (max-width: 460px) {
+
+    /* sobre mim ----------------------------*/
+    p.about-me{
+        font-size: 15px;
+        line-height: minmax(1.3rem, 2rem);
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    
+    /* Main ----------------------------*/
+
+    .img-blob{
+        display: block;
+        position: absolute;
+        z-index: -1;
+        align-self: center;
+        animation: MoveUpDown 3s linear infinite;
+    }
+
+    @keyframes MoveUpDown {
+        0%, 100%{
+            transform: translateY(0);
+        } 50% {
+            transform: translateY(-100px);
+        }
+    }
+
+    .blobUm{
+        width: 100%;
+        height: auto;
+        opacity: 0.6;
+    }
+    /* portifolio ----------------------------*/
+
+    #content-items{
+        flex-direction: row;
+        
+    }
+
+    div.content{
+        margin: 10rem 2rem 0 2rem;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    /* sobre mim ----------------------------*/
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #fotinha{
+        display: flex;
+        width: 20rem;
+        height: auto;
+        
+    }
+
+    /* contato ----------------------------*/
+
+    
+    
+
+}
+
