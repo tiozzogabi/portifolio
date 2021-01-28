@@ -1,0 +1,22 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "?",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiozzogabi/portifolio.git"
+  },
+  "keywords": [
+    "json"
+  ],
+  "author": "Gabit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiozzogabi/portifolio/issues"
+  },
+  "homepage": "https://github.com/tiozzogabi/portifolio#readme"
+}
