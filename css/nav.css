@@ -86,9 +86,6 @@ a.contato:hover{
     transition: transform 0.5s ease-out;
     overflow-y: hidden;
   }
-  .nav-active{
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in;
-  }
+  
 }
 
