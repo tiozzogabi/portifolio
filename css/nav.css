@@ -58,7 +58,7 @@ a.contato:hover{
     padding-right: 0;
   }
   #bar{
-    display: inherit;
+    display: none;
     position: absolute;
     right: 3%;
     top: 51%;
@@ -74,7 +74,6 @@ a.contato:hover{
   .nav-list{
     position: fixed;
     justify-content: space-around;
-    background: #C76E1B;
     top: 0vh;
     height: 100vh;
     width: 100%;
