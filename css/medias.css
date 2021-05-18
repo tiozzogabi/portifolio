@@ -1,6 +1,11 @@
-@media (max-width: 460px) {
+@media (max-width: 530px) {
   section {
     padding: 0rem;
+  }
+
+  section.port {
+    height: auto;
+    padding-bottom: 3rem;
   }
 
   #container-end {
@@ -8,6 +13,12 @@
   }
 
   /* sobre mim ----------------------------*/
+  section.about {
+    height: auto;
+  }
+  #container {
+    padding-bottom: 3rem;
+  }
   p.about-me {
     font-size: 15px;
     line-height: minmax(1.3rem, 2rem);
@@ -17,6 +28,10 @@
   }
   div.titulo-um {
     margin-top: -30px;
+  }
+
+  section.contact {
+    height: auto;
   }
 }
 

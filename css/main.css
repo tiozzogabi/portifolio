@@ -85,9 +85,6 @@ section.port,
 section.contact {
   background: #191919;
 }
-section.port {
-  height: auto;
-}
 
 #content-items {
   display: flex;
@@ -224,10 +221,6 @@ img.cover {
 }
 
 /* Seção contato ----------------------------*/
-
-section.contact {
-  height: auto;
-}
 
 #container-end {
   width: 100%;
