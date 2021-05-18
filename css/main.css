@@ -201,6 +201,9 @@ img.cover {
 }
 
 /* Seção sobre mim ----------------------------*/
+section.contact {
+  height: 80vh;
+}
 
 #container {
   line-height: 2.3rem;
