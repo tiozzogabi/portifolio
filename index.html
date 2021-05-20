@@ -5,14 +5,15 @@
     <title>Portifolio</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/medias.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"/>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  </head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">.
+    </head>
   <body>
     <nav>
       <img src="./images/logo.svg" alt="" />
@@ -36,68 +37,48 @@
 
     <section class="port">
       <h2 class="title" id="portifolio">Portifólio</h2>
-      <div id="content-box">
-        <div id="content-items"> 
-          <a href="#notion" onclick="Modal.open()" >
-          <div class="content orange" ><img class="img-box" src="https://img.icons8.com/ios/250/FFFFFF/light-on.png"></div>
+        <div id="project-container"> 
+         
+          <div class="project-tile">
+            <img class="img-project notion" src="images/notion.png" alt="notion widget print">
+            <a href="https://github.com/tiozzogabi/widgetNotionDate" target="_blank">
+            <div class="title-tile">
+              <p class="title-p">Notion Widget</p>
+              <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+            </div>
           </a>
-          <a href="#portf" onclick="ModalPorti.open()">
-          <div class="content blue" ><img class="img-box" src="https://img.icons8.com/ios/250/FFFFFF/business.png"></div>
-          </a>
-          <a href="#discover" onclick="ModalRock.open()">
-          <div class="content orange" ><img class="img-box" src="https://img.icons8.com/ios/250/FFFFFF/project.png"></div>
-          </a>
-        </div>
-        
-      </div>
-      </div>
-    </section>
+          </div>
 
-    <div class="modal-overlay">
-      <div class="modal-box">
-        <div class="box-title">
-        <button class="btn"><a href="" onclick="Modal.close()">X</a></button>
-        <p class="title">Notion widget</p>
-      </div>
-      <div class="box-content">
-      <span>- Widget Notion Date</span>
-      <span>- Contém data, mês, dia da semana e mês</span>
-      <span>- Versão em modo escuro e claro para o Notion</span>
-    </div>  
-      <img src="./images/imgEx.png" alt="Capa do projeto" class="cover">
-      <a href="https://github.com/tiozzogabi/widgetNotionDate" target="_blank"><img src="./images/github-brands.svg" class="icon-modal" /></a> 
-    </div>
-    </div>
+            <div class="project-tile"><a href="">
+              <img class="img-project" src="images/portfolio.png" alt="portifolio print">
+              <div class="title-tile">
+                <p class="title-p">Portifólio</p>
+                <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+              </div>
+            </a>
+              </div>
+
+              <div class="project-tile"><a href=""></a>
+                <img class="img-project" src="images/devfinances.png" alt="devfinances print">
+                <a href="https://github.com/tiozzogabi/maratonaDiscover" target="_blank">
+                <div class="title-tile">
+                  <p class="title-p">Dev Finances</p>
+                  <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+                </div>
+              </a>
+                </div>
+
+                <div class="project-tile"><a href=""></a>
+                  <img class="img-project" src="images/todo.png" alt="">
+                  <div class="title-tile">
+                    <p class="title-p">To do app</p>
+                    <i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
+                  </div>
+                </div>
+        </div>
+        <button class="btn-more-projects"><a href="moreProjects.html" target="_blank">Show More</a></button>
+    </section>      
   
-    <div class="modal-overlay modal-porti">
-      <div class="modal-box">
-        <div class="box-title">
-          <button class="btn"><a href="" onclick="ModalPorti.close()">X</a></button>
-        <h3 class="title">Portifólio</h3>
-        </div>
-        <div class="box-content">
-          <span>- Portifólio Academico</span>
-          <span>- Contém 3 projetos</span>
-          <span>- features futuras: tradução em inglês, melhor acessibilidade e modo claro</span>
-        </div> 
-      </div>
-    </div>
-
-    <div class="modal-overlay modal-rocketseat">
-      <div class="modal-box">
-        <div class="box-title">
-        <button class="btn"><a href="" onclick="ModalRock.close()">X</a></button>
-        <p class="title">Projeto Rockseat</p>
-        </div>
-        <div class="box-content">
-          <span>- Projeto Dev.Finances</span>
-          <span>- Produzido na Maratona Discover</span>
-          <span>- Feature adicional- pagina inicial e indicador ui de saldo negativo</span>
-        </div> 
-          <a href="https://github.com/tiozzogabi/maratonaDiscover" target="_blank"><img src="./images/github-brands.svg" class="icon-modal" /></a> 
-      </div>
-    </div>
-    
     <section class="about">
       <h2 class="title" id="sobre">Sobre Mim</h2>
       <div id="container">
@@ -153,6 +134,9 @@
       </p>
     </div>
     </section>
+    <footer>
+      <p class="footer">@Copyright Gabit</p>
+    </footer>
 
     <script src="./script/nav.js"></script>
     <script src="./script/modal.js"></script>

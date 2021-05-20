@@ -30,6 +30,10 @@
     margin-top: -30px;
   }
 
+  .project-tile {
+    width: 60vw;
+  }
+
   section.contact {
     height: auto;
   }

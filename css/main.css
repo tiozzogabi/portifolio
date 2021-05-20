@@ -86,118 +86,102 @@ section.contact {
   background: #191919;
 }
 
-#content-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-div.content {
-  width: 10rem;
-  height: 10rem;
-  background: #de730f;
-  border-radius: 29px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.content.blue {
-  background: #2880c1;
-}
-
-.content .img-box {
-  width: 8rem;
-}
-
-#controls {
-  display: none;
-}
-
-/* Modal ----------------------------*/
-
-.modal-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(75, 138, 240, 0.637);
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 999;
-}
-
-.modal-box {
-  padding: 0.5rem;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.box-title {
-  margin-top: 2rem;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-}
-
-.btn {
-  background-color: darkred;
-  height: 40px;
-  width: 40px;
-  border-style: none;
-  border-radius: 10px;
-}
-.btn:hover {
-  background-color: red;
-}
-
-.btn a {
-  color: white;
-  font-size: 18px;
-}
-
-.modal-box .box-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 1rem;
-}
-
-.box-content span {
-  line-height: 25px;
-  font-family: "Roboto";
-}
-
-img.cover {
-  width: 70%;
+section.port {
   height: auto;
-  margin-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
-.icon-modal {
-  width: 50px;
-  filter: invert();
-  margin-bottom: 1rem;
+#project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.project-tile {
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  margin: 1rem 0.4rem;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-tile:hover {
+  animation: 1s;
+}
+@keyframes sizeUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.img-project {
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.title-tile {
+  background-color: #de730f;
+  color: white;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0px 0px 20px 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.title-tile:hover {
+  animation: scaleUp 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    padding-top: 1rem;
+  }
+  100% {
+    padding-top: 3rem;
+  }
+}
+
+p.title-p {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 1rem;
+}
+
+.btn-more-projects {
+  background: #2880c1;
+  border: none;
+  border-radius: 3px;
+  padding: 0.8rem 1rem;
+  align-self: center;
+  margin-top: 2rem;
   cursor: pointer;
 }
 
-.icon-modal:hover {
-  opacity: 0.7;
+.btn-more-projects a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-.active {
-  opacity: 1;
-  visibility: visible;
+
+.btn-more-projects:hover {
+  background: #31bde7;
+}
+
+.btn-more-projects:active {
+  box-shadow: inset 4px 4px 6px rgba(238, 254, 255, 0.3),
+    5px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Seção sobre mim ----------------------------*/
@@ -259,11 +243,31 @@ section.contact {
   font-weight: 200;
   text-align: center;
   font-size: 2.5rem;
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+    no-repeat;
+  transition: 0.5s;
+}
+
+.icon-description:hover {
+  color: #dc3c1f;
+  --d: 100%;
 }
 
 p.info {
   text-align: justify;
-  margin: 1rem;
-  line-height: 2.3rem;
+  margin: 2rem;
+  font-size: 1.3rem;
+  font-weight: lighter;
   align-self: center;
+}
+
+/* Footer ----------------------------*/
+footer {
+  background: #151515;
+  padding: 1rem;
+}
+
+p.footer {
+  color: white;
+  text-align: center;
 }
