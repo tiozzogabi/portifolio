@@ -1,3 +1,8 @@
+:root {
+  --blue: #2880c1;
+  --orange: #ba5d00;
+  --red: #dc3c1f;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +12,7 @@
 body {
   overflow-x: hidden;
   height: 100vh;
-  color: #ffffff;
+  color: #fff;
   background: linear-gradient(90deg, #0f0b0b 0%, #191919 100%);
   font-family: "roboto", sans-serif;
 }
@@ -24,14 +29,14 @@ h2.title,
   align-self: flex-end;
   margin: 1rem 0rem;
   margin-bottom: 2rem;
-  color: #dc3c1f;
+  color: var(--red);
   font-weight: bold;
   font-size: 2rem;
 }
 
 /* Main --------------------------------------*/
 
-main {
+section.home {
   height: 85vh;
   display: flex;
   justify-content: center;
@@ -62,17 +67,17 @@ p.right {
 
 span.red {
   font-weight: bold;
-  color: #dc3c1f;
+  color: var(--red);
 }
 
 span.orange {
   font-weight: bold;
-  color: #de730f;
+  color: var(--orange);
 }
 
 span.blue {
   font-weight: bold;
-  color: #2880c1;
+  color: var(--blue);
 }
 
 .img-blob {
@@ -94,7 +99,7 @@ section.port {
 #project-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: space-between;
+  align-items: center;
   justify-content: space-evenly;
   width: 100%;
 }
@@ -108,7 +113,14 @@ section.port {
   justify-content: center;
   margin: 1rem 0.4rem;
   border-radius: 0px 0px 20px 20px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+}
+
+.project-link {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
 }
 
 .project-tile:hover {
@@ -130,8 +142,8 @@ section.port {
 }
 
 .title-tile {
-  background-color: #de730f;
-  color: white;
+  background-color: var(--orange);
+  color: #fff;
   display: flex;
   padding: 1rem;
   border-radius: 0px 0px 20px 20px;
@@ -154,13 +166,13 @@ section.port {
 }
 
 p.title-p {
-  color: white;
+  color: #fff;
   font-size: 1.3rem;
   padding-right: 1rem;
 }
 
 .btn-more-projects {
-  background: #2880c1;
+  background: var(--blue);
   border: none;
   border-radius: 3px;
   padding: 0.8rem 1rem;
@@ -170,7 +182,7 @@ p.title-p {
 }
 
 .btn-more-projects a {
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -197,7 +209,7 @@ section.contact {
   align-items: center;
 }
 
-#fotinha {
+#foto-pefil {
   width: 20rem;
   height: auto;
 }
@@ -208,12 +220,15 @@ section.contact {
 }
 
 /* Seção contato ----------------------------*/
+section.contact {
+  padding-bottom: 6rem;
+}
 
 #container-end {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: space-evenly;
+  align-items: center;
   justify-content: center;
   padding-top: 1.5rem;
 }
@@ -222,7 +237,7 @@ section.contact {
   width: 100%;
   height: auto;
   display: flex;
-  align-items: space-between;
+  align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-bottom: 1rem;
@@ -239,17 +254,17 @@ section.contact {
 }
 
 .icon-description {
-  color: white;
+  color: #fff;
   font-weight: 200;
   text-align: center;
   font-size: 2.5rem;
-  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 2px
     no-repeat;
   transition: 0.5s;
 }
 
 .icon-description:hover {
-  color: #dc3c1f;
+  color: var(--red);
   --d: 100%;
 }
 
@@ -268,6 +283,6 @@ footer {
 }
 
 p.footer {
-  color: white;
+  color: #fff;
   text-align: center;
 }

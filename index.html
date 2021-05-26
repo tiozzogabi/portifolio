@@ -4,19 +4,19 @@
     <meta charset="utf-8" />
     <title>Portifolio</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/scrollbar.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/medias.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/scrollbar.css" />
+    <link rel="stylesheet" href="src/css/nav.css" />
+    <link rel="stylesheet" href="src/css/medias.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"/>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">.
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
   <body>
     <nav>
-      <img src="./images/logo.svg" alt="" />
+      <img src="src/images/logo.svg" alt="logo gabit" />
       <ul class="nav-list">
         <li><a href="#portifolio" class="link portifolio">Portifólio</a></li>
         <li><a href="#sobre" class="link sobre">Sobre Mim</a></li>
@@ -25,6 +25,7 @@
     </nav>
 
     <main>
+    <section class="home">
       <div class="titulo-um ">
       <h1 class="left">
         <span class="red">Oi,</span><br> Meu nome é
@@ -32,16 +33,16 @@
       </h1>
       <p class="right">este é meu <span class="blue">portifólio digital</span></p>
       </div>
-      <div class="img-blob"><img class="blobUm" src="./images/blob.svg"></div>
-    </main>
+      <div class="img-blob"><img class="blobUm" src="src/images/blob.svg" alt=""></div>
+    </section>
 
     <section class="port">
       <h2 class="title" id="portifolio">Portifólio</h2>
         <div id="project-container"> 
          
           <div class="project-tile">
-            <img class="img-project notion" src="images/notion.png" alt="notion widget print">
-            <a href="https://github.com/tiozzogabi/widgetNotionDate" target="_blank">
+            <a class="project-link" href="https://github.com/tiozzogabi/widgetNotionDate" target="_blank">
+            <img class="img-project notion" src="src/images/notion.png" alt="notion widget  ">
             <div class="title-tile">
               <p class="title-p">Notion Widget</p>
               <i class="fa fa-home fa-2x" aria-hidden="true"></i>
@@ -49,8 +50,9 @@
           </a>
           </div>
 
-            <div class="project-tile"><a href="">
-              <img class="img-project" src="images/portfolio.png" alt="portifolio print">
+            <div class="project-tile">
+              <a class="project-link" href="https://github.com/tiozzogabi/portifolio" target="_blank">
+              <img class="img-project" src="src/images/portfolio.png" alt="portifolio">
               <div class="title-tile">
                 <p class="title-p">Portifólio</p>
                 <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
@@ -58,9 +60,9 @@
             </a>
               </div>
 
-              <div class="project-tile"><a href=""></a>
-                <img class="img-project" src="images/devfinances.png" alt="devfinances print">
-                <a href="https://github.com/tiozzogabi/maratonaDiscover" target="_blank">
+              <div class="project-tile">
+                <a class="project-link" href="https://github.com/tiozzogabi/maratonaDiscover" target="_blank">
+                <img class="img-project" src="src/images/devfinances.png" alt="devfinances app">
                 <div class="title-tile">
                   <p class="title-p">Dev Finances</p>
                   <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
@@ -68,23 +70,25 @@
               </a>
                 </div>
 
-                <div class="project-tile"><a href=""></a>
-                  <img class="img-project" src="images/todo.png" alt="">
+              <div class="project-tile">
+                  <a class="project-link" href="https://github.com/tiozzogabi/toDoApp" target="_blank">
+                  <img class="img-project" src="src/images/todo.png" alt="to do app">
                   <div class="title-tile">
                     <p class="title-p">To do app</p>
                     <i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
                   </div>
+                </a>
                 </div>
         </div>
-        <button class="btn-more-projects"><a href="moreProjects.html" target="_blank">Show More</a></button>
+        <a class="btn-more-projects" href="moreProjects.html">Show More Projects</a>
     </section>      
   
     <section class="about">
       <h2 class="title" id="sobre">Sobre Mim</h2>
       <div id="container">
-        <img src="./images/foto.png" id="fotinha" />
+        <img src="src/images/foto.png" id="foto-pefil" alt="foto de perfil"/>
         <p class="about-me">
-          &nbsp Olá, pode me chamar de Gabi. Pretendo me tornar uma desenvolvedora
+          &nbsp; Olá, pode me chamar de Gabi. Pretendo me tornar uma desenvolvedora
            front-end e tenho estudado sobre área de programação web. Passo a maior parte 
            do meu tempo estudando JavaScript e fazendo exercícios em sites como 
            CodeWars, JSChallenger e na hora do descanso vou assistir meus animes favoritos. 🔥
@@ -123,22 +127,22 @@
           <p class="icon-description">
             <i class="fas fa-at"></i>E-mail</p>
           </a>
-          </div>
-
-          </div>
-        
+          </div>          
       </div>
+
       <p class="info">
         Esse são as principais redes em que você pode entrar em contato comigo e
         ver mais do meu trabalho.
       </p>
     </div>
+
     </section>
+  </main>
     <footer>
       <p class="footer">@Copyright Gabit</p>
     </footer>
 
-    <script src="./script/nav.js"></script>
-    <script src="./script/modal.js"></script>
+    <script src="src/script/nav.js"></script>
+    <script src="src/script/modal.js"></script>
   </body>
 </html>

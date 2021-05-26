@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/scrollbar.css" />
-  <title>Projects</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/scrollbar.css" />
+    <link rel="stylesheet" href="src/css/projects.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Projects</title>
+  </head>
+  <body>
+    <a href="./index.html" class="back-index"
+      ><i class="fa fa-arrow-left fa-1x"></i
+    ></a>
+    <header>
+      <form action="" role="search">
+        <input
+          type="search"
+          aria-label="search text"
+          name="search"
+          id="search"
+          placeholder="digite um projeto"
+        />
+        <button type="submit" class="search-button" value="Search">
+          <i class="fa fa-search fa-2x"></i>
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <div id="project-container">
+        <div class="project-tile">
+          <a
+            class="project-link"
+            href="https://github.com/tiozzogabi/widgetNotionDate"
+            target="_blank"
+          >
+            <img
+              class="img-project notion"
+              src="src/images/notion.png"
+              alt="notion widget"
+            />
+            <div class="title-tile">
+              <p class="title-p">Notion Widget</p>
+              <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <a
+            class="project-link"
+            href="https://github.com/tiozzogabi/portifolio"
+            target="_blank"
+          >
+            <img
+              class="img-project"
+              src="src/images/portfolio.png"
+              alt="portifolio"
+            />
+            <div class="title-tile">
+              <p class="title-p">Portifólio</p>
+              <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <a
+            class="project-link"
+            href="https://github.com/tiozzogabi/maratonaDiscover"
+            target="_blank"
+          >
+            <img
+              class="img-project"
+              src="src/images/devfinances.png"
+              alt="devfinances app"
+            />
+            <div class="title-tile">
+              <p class="title-p">Dev Finances</p>
+              <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <a
+            class="project-link"
+            href="https://github.com/tiozzogabi/toDoApp"
+            target="_blank"
+          >
+            <img class="img-project" src="src/images/todo.png" alt="to do app" />
+            <div class="title-tile">
+              <p class="title-p">To do app</p>
+              <i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <a
+            class="project-link"
+            href="https://www.freecodecamp.org/fcc00b06696-b8d7-4189-8e9e-73a997314667"
+            target="_blank"
+          >
+            <img
+              class="img-project"
+              src="src/images/codepen.png"
+              alt="codepen site com projetos"
+            />
+            <div class="title-tile">
+              <p class="title-p">Free Code Camp</p>
+              <i class="fa fa-fire fa-2x" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="footer">@Copyright Gabit</p>
+    </footer>
+  </body>
 </html>
