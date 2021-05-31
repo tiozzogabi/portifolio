@@ -123,18 +123,6 @@ section.port {
   justify-content: center;
 }
 
-.project-tile:hover {
-  animation: 1s;
-}
-@keyframes sizeUp {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
-}
-
 .img-project {
   width: 100%;
   height: auto;
@@ -152,17 +140,7 @@ section.port {
 }
 
 .title-tile:hover {
-  animation: scaleUp 1s ease-in;
-  animation-fill-mode: forwards;
-}
-
-@keyframes scaleUp {
-  0% {
-    padding-top: 1rem;
-  }
-  100% {
-    padding-top: 3rem;
-  }
+  background-color: #ff8000;
 }
 
 p.title-p {
