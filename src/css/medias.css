@@ -1,4 +1,4 @@
-@media (max-width: 530px) {
+@media screen and (max-width: 530px) {
   section {
     padding: 0rem;
   }
@@ -23,15 +23,30 @@
     font-size: 15px;
     line-height: minmax(1.3rem, 2rem);
   }
-  #fotinha {
+  #foto-pefil {
     width: 70%;
   }
   div.titulo-um {
     margin-top: -30px;
   }
 
+  .project-tile {
+    width: 60vw;
+  }
+  .title-tile {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
   section.contact {
     height: auto;
+  }
+  p.icon-description {
+    font-size: 1.5rem;
+  }
+
+  p.info {
+    font-size: 1rem;
   }
 }
 
@@ -81,11 +96,28 @@
     align-items: center;
   }
 
-  #fotinha {
+  #foto-pefil {
     display: flex;
     width: 16rem;
     height: auto;
   }
 
   /* contato ----------------------------*/
+}
+
+@media (min-width: 530px) {
+  section.contact {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-tile {
+    width: 60vw;
+  }
+
+  .title-tile {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
 }

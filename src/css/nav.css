@@ -1,63 +1,61 @@
-  nav {
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-
-nav .nav-list{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
+nav {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-ul{
-    list-style: none;
+nav .nav-list {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
 }
 
 li {
-    margin-right: 70px;
-    
+  margin-right: 70px;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 800;
-    font-size: 25px;
-
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 25px;
 }
 
-#bar{
+#bar {
   display: none;
 }
-.landing{
+.landing {
   height: 90vh;
 }
 
 /* titles*/
 
-a.portifolio:hover{
-  color: #19AA5E;
+a.portifolio:hover {
+  color: #19aa5e;
 }
 
-a.sobre:hover{
-  color: #2880C1;
+a.sobre:hover {
+  color: var(--blue);
 }
 
-a.contato:hover{
-  color: #19AA5E;
+a.contato:hover {
+  color: #19aa5e;
 }
 
 @media screen and (max-width: 768px) {
-  body{
+  body {
     overflow-x: hidden;
   }
-  nav{
+  nav {
     position: relative;
     padding-right: 0;
   }
-  #bar{
+  #bar {
     display: none;
     position: absolute;
     right: 3%;
@@ -67,11 +65,11 @@ a.contato:hover{
     z-index: 2;
   }
 
-  li{
+  li {
     left: 50%;
   }
 
-  .nav-list{
+  .nav-list {
     position: fixed;
     justify-content: space-around;
     top: 0vh;
@@ -80,11 +78,9 @@ a.contato:hover{
     flex-direction: column;
     transition: all 0.5s ease-in;
     text-align: center;
-    padding-top: 10%;  
+    padding-top: 10%;
     transform: translateX(100%);
     transition: transform 0.5s ease-out;
     overflow-y: hidden;
   }
-  
 }
-
