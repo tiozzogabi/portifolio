@@ -106,8 +106,13 @@
 }
 
 @media (min-width: 530px) {
-  section.contact {
+  section.contact,
+  section.about {
     height: auto;
+  }
+
+  section.about {
+    padding-bottom: 3rem;
   }
 }
 
@@ -119,5 +124,11 @@
   .title-tile {
     font-size: 1.2rem;
     padding: 0.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  section.about {
+    height: 100vh;
   }
 }
