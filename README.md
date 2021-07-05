@@ -1,2 +1,4 @@
 # portifolio
-Este é o meu portifólio com projetos realizados na faculdade.
+
+- projetos realizados na faculdade.
+- projetos realizados fora da faculdade.
